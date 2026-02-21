@@ -1,0 +1,99 @@
+-- Power BI Visuals Assignment Solution
+-- Dataset: Global Superstore
+
+
+-- Question 1: Create a Card Visual to show Total Sales.
+-- Answer:
+-- 1. Load the Global Superstore dataset into Power BI.
+-- 2. Go to Report View.
+-- 3. Insert a Card Visual.
+-- 4. Drag the "Sales" field into the Values section.
+-- 5. Ensure aggregation is set to SUM.
+-- Result: Card displays Total Sales.
+
+-- Question 2: Create a Donut Chart showing Total Sales by Ship Mode.
+-- Which ship mode generates the highest sales?
+-- Answer:
+-- 1. Insert a Donut Chart.
+-- 2. Drag "Ship Mode" to Legend.
+-- 3. Drag "Sales" to Values (SUM).
+-- 4. Enable data labels for clarity.
+-- Observation:
+-- The Ship Mode with the largest slice represents the highest sales.
+-- (Typically Standard Class generates the highest sales in this dataset.)
+
+-- Question 3: Create a Line Chart showing the Sales Trend over time (by Month and Year).
+-- Is there any noticeable seasonal pattern in sales?
+-- Answer:
+-- 1. Insert a Line Chart.
+-- 2. Drag "Order Date" to X-Axis.
+-- 3. Use Month-Year hierarchy.
+-- 4. Drag "Sales" to Values (SUM).
+-- Observation:
+-- Sales typically increase toward the end of the year (Nov–Dec),
+-- showing a seasonal spike during holiday months.
+
+-- Question 4: Create a Bar Chart to compare Sales by Category.
+-- Answer:
+-- 1. Insert a Clustered Bar Chart.
+-- 2. Drag "Category" to Axis.
+-- 3. Drag "Sales" to Values (SUM).
+-- Observation:
+-- Technology usually has the highest sales,
+-- followed by Furniture and Office Supplies.
+
+-- Question 5: Create a Matrix Visual to display Sales by Month and Category.
+-- Identify the month with the highest sales.
+-- Answer:
+-- 1. Insert a Matrix Visual.
+-- 2. Drag "Month" to Rows.
+-- 3. Drag "Category" to Columns.
+-- 4. Drag "Sales" to Values (SUM).
+-- Observation:
+-- December typically shows the highest total sales.
+
+-- Question 6: Create a Decomposition Tree for Sales Breakdown.
+-- Answer:
+-- 1. Insert a Decomposition Tree visual.
+-- 2. Add "Sales" as Analyze field.
+-- 3. Add breakdown dimensions such as:
+--    Country → Category → Sub-Category → Segment.
+-- This allows dynamic drill-down to identify drivers of total sales.
+
+-- Question 7: Create a Scatter Chart to compare Discount vs. Profit by Sub-Category.
+-- Are there any outliers where high discounts resulted in negative profit?
+-- Answer:
+-- 1. Insert Scatter Chart.
+-- 2. Drag "Discount" to X-axis.
+-- 3. Drag "Profit" to Y-axis.
+-- 4. Drag "Sub-Category" to Legend.
+-- 5. Use "Sales" as Size.
+-- Observation:
+-- Yes, some sub-categories show high discounts with negative profit,
+-- especially in Furniture-related products.
+
+-- Question 8: Use a Funnel Chart to show the number of orders by Customer Segment.
+-- Answer:
+-- 1. Insert Funnel Chart.
+-- 2. Drag "Segment" to Group.
+-- 3. Drag "Order ID" (Count) to Values.
+-- Observation:
+-- Consumer segment typically has the highest number of orders.
+
+-- Question 9: Use a Waterfall Chart to analyze how Profit changes by Category within countries.
+-- Answer:
+-- 1. Insert Waterfall Chart.
+-- 2. Drag "Country" to Category.
+-- 3. Drag "Profit" to Y-axis.
+-- 4. Use "Category" as Breakdown.
+-- This shows profit contribution and decline across categories and countries.
+
+-- Question 10: Create a Dual-Axis Line Chart to show Total Sales and Profit Over Time (by Month).
+-- Answer:
+-- 1. Insert Line and Clustered Column Chart.
+-- 2. Drag "Order Date (Month-Year)" to X-axis.
+-- 3. Drag "Sales" to Column Values.
+-- 4. Drag "Profit" to Line Values.
+-- 5. Enable secondary axis for Profit.
+-- Result:
+-- Visual shows correlation between Sales and Profit trends over time.
